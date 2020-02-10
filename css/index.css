@@ -165,20 +165,21 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #F6F6F6;
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
 }
 .navigation .navtitle {
   font-size: 4em;
-  padding: 20px;
+  padding: 10px;
 }
-nav {
+.navigation nav {
   display: flex;
   margin-right: 50px;
+  padding-top: 10px;
 }
-nav a {
+.navigation nav a {
   text-decoration: none;
   color: #020202;
   font-size: 2em;
@@ -186,7 +187,7 @@ nav a {
   margin-right: 20px;
   transition: 0.5s;
 }
-nav a:hover {
+.navigation nav a:hover {
   color: black;
   border-bottom: 1px solid rgba(0, 0, 0, 0.445);
   transition: 0.1s;
@@ -201,8 +202,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro {
+  padding-top: 100px;
+}
 .home .intro img {
-  padding-top: 110px;
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;

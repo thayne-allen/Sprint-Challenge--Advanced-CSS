@@ -1,3 +1,10 @@
+.flexbox {
+  display: flex;
+}
+.centercenter {
+  align-items: center;
+  justify-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -161,13 +168,13 @@ p {
   margin: 0 auto;
 }
 .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   width: 100%;
-  display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 10px;
 }
 .navigation .navtitle {
@@ -193,14 +200,14 @@ p {
   transition: 0.1s;
 }
 footer {
+  align-items: center;
+  justify-content: center;
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .home .intro {
   padding-top: 100px;
@@ -218,6 +225,13 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -241,6 +255,11 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -249,6 +268,20 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: linear-gradient(to bottom, #454A59 5%, #81848E 100%);
+  border-radius: 5px;
+  border: 1px solid;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 12px 37px;
+}
+.home .walk .walk-text .btn:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
 }
 .home .walk .walk-img {
   width: 46%;

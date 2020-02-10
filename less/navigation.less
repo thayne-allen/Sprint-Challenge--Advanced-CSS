@@ -1,1 +1,36 @@
 // Navigation code here
+
+.navigation{
+	position: fixed;
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+	background-color: white;
+	justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    
+    .navtitle{
+        font-size: 4em;
+        padding: 20px;
+    }
+}
+
+nav{
+	display: flex;
+	margin-right: 50px;
+}
+
+nav a{
+	text-decoration: none;
+	color: rgb(2, 2, 2);
+	font-size: 2em;
+	margin-left: 20px; 
+	margin-right: 20px;
+	transition: 0.5s;
+}
+nav a:hover{
+	color:black;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.445);
+	transition: 0.1s;
+}

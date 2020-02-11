@@ -177,6 +177,11 @@ p {
   background-color: #F6F6F6;
   padding-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .navigation {
+    position: unset;
+  }
+}
 .navigation .navtitle {
   font-size: 4em;
   padding: 10px;
@@ -186,7 +191,13 @@ p {
   margin-right: 50px;
   padding-top: 10px;
 }
-.navigation nav a {
+@media (max-width: 500px) {
+  .navigation nav {
+    margin-right: unset;
+    padding-top: unset;
+  }
+}
+.navigation a {
   text-decoration: none;
   color: #020202;
   font-size: 2em;
@@ -194,7 +205,12 @@ p {
   margin-right: 20px;
   transition: 0.5s;
 }
-.navigation nav a:hover {
+@media (max-width: 500px) {
+  .navigation a {
+    font-size: 1.5em;
+  }
+}
+.navigation:hover {
   color: black;
   border-bottom: 1px solid rgba(0, 0, 0, 0.445);
   transition: 0.1s;
@@ -212,8 +228,20 @@ footer {
 .home .intro {
   padding-top: 100px;
 }
+@media (max-width: 500px) {
+  .home .intro {
+    padding-top: 10px;
+  }
+}
 .home .intro img {
   border-radius: 5px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+    position: relative;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -273,10 +301,17 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     flex-direction: column-reverse;
+    margin-top: 30px;
+    padding: 20px;
   }
 }
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -294,6 +329,12 @@ footer {
   font-weight: bold;
   padding: 12px 37px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    display: flex;
+    justify-content: center;
+  }
+}
 .home .walk .walk-text .btn:hover {
   background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
   background-color: #476e9e;
@@ -302,8 +343,20 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: unset;
+  }
+}
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    height: unset;
+    padding-bottom: 20px;
+  }
 }

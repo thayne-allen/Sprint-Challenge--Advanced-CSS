@@ -321,6 +321,7 @@ footer {
 }
 .home .walk .walk-text .btn {
   background: linear-gradient(to bottom, #454A59 5%, #81848E 100%);
+  background-color: #454A59;
   border-radius: 5px;
   border: 1px solid;
   display: inline-block;
@@ -336,8 +337,8 @@ footer {
   }
 }
 .home .walk .walk-text .btn:hover {
-  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-  background-color: #476e9e;
+  background: linear-gradient(to bottom, #476E9E 5%, #7892C9 100%);
+  background-color: #476E9E;
 }
 .home .walk .walk-img {
   width: 46%;
